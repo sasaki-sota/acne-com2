@@ -60,3 +60,6 @@ gem 'graphiql-rails', group: :development
 # スキーマをモデルに書き出す
 gem 'annotate'
 
+# デバックツール
+gem "pry-rails"
+gem "pry-byebug"
