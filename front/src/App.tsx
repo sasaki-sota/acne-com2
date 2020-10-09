@@ -1,12 +1,13 @@
 import React from 'react';
-import './App.css';
+import {ApolloProvider} from 'react-apollo';
+import client from "./client";
 
-function App() {
-  return (
-      <div>
-          <h1>Hello world!</h1>
-      </div>
-  );
+const App = () => {
+    return (
+        <ApolloProvider client={client}>
+            <div>Hello, GraphQL</div>
+        </ApolloProvider>
+    )
 }
 
 export default App;
